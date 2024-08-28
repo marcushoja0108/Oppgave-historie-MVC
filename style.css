@@ -1,0 +1,27 @@
+#story {
+    display: flex;
+    font-size: larger;
+    text-align: center;
+}
+
+.wordbox {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: auto;
+
+    font-size: larger;
+}
+
+#word {
+    margin: 30px;
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.field {
+    margin-left: 4px;
+    margin-right: 4px;
+    color: red;
+}

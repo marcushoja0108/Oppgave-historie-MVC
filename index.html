@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjektivhistorie</title>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div id="app"></div>
+
+
+
+    </div>
+    <script>
+
+        //model
+        let alt1 = " _______"
+        let alt2 = " _______"
+        let alt3 = " _______"
+        let alt4 = " _______"
+        let alt5 = " _______"
+
+        //view
+        updateview()
+        function updateview() {
+
+            document.getElementById('app').innerHTML = /*HTML*/`
+            <div id="story">
+
+            <div>Det var en gang en </div>
+            <div class="field" id="space1">${alt1}</div>
+            <div class="field" id="space2">${alt2}</div>
+            <div>som bodde i</div>
+            <div class="field" id="space3">${alt3}</div>
+            <div>. Naboen var</div>
+            <div class="field" id="space4">${alt4}</div>
+            <div>og</div>
+            <div class="field" id="space5">${alt5}</div>
+            <div>og alt var ellers fint.</div>
+            </div>
+
+            <br/>
+
+            <div class="wordbox">
+            <div id="word" onclick="choice2('bie')">bie</div>
+            <div id="word" onclick="choice1('grønn')">grønn</div>
+            <div id="word" onclick="choice4('høy')">høy</div>
+            <div id="word" onclick="choice5('lys')">lys</div>
+            <div id="word" onclick="choice3('trær')">trær</div>
+            <div id="word" onclick="choice5('flott')">flott</div>
+            <div id="word" onclick="choice1('redd')">redd</div>
+            <div id="word" onclick="choice4('lilla')">lilla</div>
+            <div id="word" onclick="choice3('hus')">hus</div>
+            <div id="word" onclick="choice2('ku')">ku</div>
+           
+            `;
+
+        }
+
+        //controller
+        function choice1(word) {
+            alt1 = word
+            updateview()
+        }
+        function choice2(word) {
+            alt2 = word
+            updateview()
+        }
+        function choice3(word) {
+            alt3 = word
+            updateview()
+        }
+        function choice4(word) {
+            alt4 = word
+            updateview()
+        }
+        function choice5(word) {
+            alt5 = word
+            updateview()
+        }
+
+    </script>
+</body>
+
+</html>
